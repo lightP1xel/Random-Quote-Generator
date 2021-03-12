@@ -1,6 +1,6 @@
 const randomQuote = document.querySelector('.randomQuoteContainer')
 const authorQuote = document.querySelector('.authorContainer')
-const generateBtn = document.querySelector('.createQuote')
+const generateBttn = document.querySelector('.createQuote')
 
 async function getRandomQuote() {
   let response = await fetch('https://quotable.io/random')
@@ -9,4 +9,4 @@ async function getRandomQuote() {
   authorQuote.innerHTML = `Author: ${result.author}`
 }
 
-generateBtn.addEventListener('click', getRandomQuote)
+generateBttn.addEventListener('click', getRandomQuote)
